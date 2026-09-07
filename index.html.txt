@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meter Connect Utility</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Get Meter Details</h2>
+  
+  <!-- Search Inputs -->
+  <div>
+    <input type="text" id="accountNo" placeholder="Enter Consumer ID">
+    <input type="text" id="meterNo" placeholder="Enter Meter No">
+    <button onclick="fetchMeterDetails()">Search</button>
+  </div>
+
+  <!-- Consumer Info Table -->
+  <h3>Consumer Info</h3>
+  <table id="consumerTable" border="1">
+    <thead>
+      <tr><th>Consumer ID</th><th>Name</th><th>Date</th><th>Address</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <!-- RCDC Actions & History -->
+  <h3>RCDC Actions</h3>
+  <button onclick="sendRcdc('CONNECT')">Connect Meter</button>
+  <button onclick="sendRcdc('DISCONNECT')">Disconnect Meter</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

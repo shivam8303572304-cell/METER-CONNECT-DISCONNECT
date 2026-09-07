@@ -1,0 +1,9 @@
+async function fetchMeterDetails() {
+  const accountNo = document.getElementById("accountNo").value;
+  // यहाँ अपनी API से डाटा फेच करने का लॉजिक लिखें
+  console.log("Fetching details for:", accountNo);
+}
+
+function sendRcdc(action) {
+  alert(`Sending ${action} command...`);
+}
